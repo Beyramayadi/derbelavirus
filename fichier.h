@@ -1,11 +1,29 @@
-typedef struct { ENTITE_SECONDAIRE
+typedef struct
+{
 
- SDL_Surface* normal[5];
- SDL_Surface* deces[5];
- SDL_Rect position;
- int vie;
-
-}ent_sec;
+SDL_Rect position_entite;
 
 
-void initialiser_ennemi(ent_sec *ennemi);
+SDL_Surface * image_entite;
+SDL_Surface * spriteleft;
+SDL_Surface * spriteright;
+SDL_Surface * death;
+
+
+
+int pos_alea_max_x;
+int pos_alea_min_x;
+
+int pos_alea_max_y;
+int pos_alea_min_y;
+
+int sens_mouvement;
+
+int vie;
+
+
+}ent;
+
+
+
+void initialiser_entite(ent E[],int n);
