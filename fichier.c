@@ -1,25 +1,34 @@
-void initialiser_ennemi(ent_sec *ennemi){
+void initialiser_entite(ent E[],int n)
+{
+int i;
+char entite[300];
+for(i=0;i<n;i++){
 
-ennemi->vie=100;
-
-ennemi->normal[0]= IMG_Load("");
-ennemi->normal[1]= IMG_Load("");
-ennemi->normal[2]= IMG_Load("");
-ennemi->normal[3]= IMG_Load("");
-ennemi->normal[4]= IMG_Load("");
-
-
-ennemi->deces[0]= IMG_Load("");
-ennemi->deces[1]= IMG_Load("");
-ennemi->deces[2]= IMG_Load("");
-ennemi->deces[3]= IMG_Load("");
-ennemi->deces[4]= IMG_Load("");
+E[i].image_entite=NULL;
+E[i].spriteleft = NULL;
+E[i].spriteright=  NULL;
+E[i].death= NULL;
 
 
-ennemi->position.x = 0;
-ennemi->position.y = 800;
-ennemi->position.w = ennemi->normal[0]->w;
-ennemi->position.h = ennemi->normal[0]->h;
+E[i].position_entite.x=0;
+E[i].position_entite.y=0;
+/*
+E[i].position_entite.h=0;
+E[i].position_entite.w=0;
+*/
+
+
+E[i].pos_alea_max_x=0;
+E[i].pos_alea_min_x=0;
+
+E[i].pos_alea_max_y=0;
+E[i].pos_alea_min_y=0;
+
+
+
+E[i].sens_mouvement=0;
+
+E[i].vie=0;
 
 
 }
