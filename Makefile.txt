@@ -1,7 +1,0 @@
-  
-prog:mainshare.o sharescreen.o
-		gcc mainshare.o sharescreen.o -o prog -g -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf
-mainshare.o:mainshare.c
-		gcc -c mainshare.c -g -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf
-sharescreen.o:sharescreen.c
-		gcc -c sharescreen.c -g -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf
