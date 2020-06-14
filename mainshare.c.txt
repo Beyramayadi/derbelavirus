@@ -1,0 +1,38 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "screenshare.h"
+
+
+int main()
+{
+
+    SDL_Surface*ecran=NULL;
+    background back;
+    back=Initialisation_map(backg);
+    SDL_Event e;
+    int continue=1;
+    SDL_Init(SDL_INIT_EVERYTHING);
+    ecran = SDL_SetVideoMode(1200,640, 32, SDL_HWSURFACE);
+    while(continue)
+    {
+        affichage_backi(back,ecran);
+        back=scroll1(back,e);
+        back=scroll2(back);
+        //affichage_background(back,ecran);
+        SDL_PollEvent(&e);
+        switch(e.type)
+        {
+            case SDL_QUIT:
+            continue=0 ;
+            break;
+        }
+
+
+    }
+    SDL_Quit();
+
+
+
+
+return 0;
+}
