@@ -1,0 +1,21 @@
+#ifndef _ENTITE_H
+#define _ENTITE_H
+
+
+
+typedef struct Hero 
+{
+SDL_Surface *screen;
+SDL_Rect screen_rect;
+SDL_Event event;
+//background
+SDL_Surface* bg ;
+SDL_Rect bg_rect;
+//perso
+SDL_Surface* p ;
+SDL_Rect p_rect;
+int running ;
+}Hero;
+void action_create(Hero* Hero);
+void action_dispose(Hero* Hero);
+void action_render(Hero* Hero);
