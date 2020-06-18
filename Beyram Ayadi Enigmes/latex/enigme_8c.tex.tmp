@@ -1,0 +1,54 @@
+\hypertarget{enigme_8c}{}\section{enigme.\+c File Reference}
+\label{enigme_8c}\index{enigme.\+c@{enigme.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}enigme.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for enigme.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{enigme_8c_ad867c06826027827587f11213508934e}\label{enigme_8c_ad867c06826027827587f11213508934e}} 
+\hyperlink{structenigme}{enigme} {\bfseries init\+Enigme} ()
+\item 
+\mbox{\Hypertarget{enigme_8c_ad3cb0d4b2693dd44bf24f8eef38714ac}\label{enigme_8c_ad3cb0d4b2693dd44bf24f8eef38714ac}} 
+\hyperlink{structenig}{enig} {\bfseries initalea} ()
+\item 
+\mbox{\Hypertarget{enigme_8c_a82ce5a147fe7aeb7b1e4c0e920dcfa3d}\label{enigme_8c_a82ce5a147fe7aeb7b1e4c0e920dcfa3d}} 
+\hyperlink{structeni}{eni} {\bfseries inistatique} ()
+\item 
+\mbox{\Hypertarget{enigme_8c_a8ddddb38c4be2b5393265502b21b36b2}\label{enigme_8c_a8ddddb38c4be2b5393265502b21b36b2}} 
+int {\bfseries alea} ()
+\item 
+\mbox{\Hypertarget{enigme_8c_a72d0f3d09ec053d9e25f313c77d11450}\label{enigme_8c_a72d0f3d09ec053d9e25f313c77d11450}} 
+int {\bfseries aleatoire} ()
+\item 
+\mbox{\Hypertarget{enigme_8c_afd5716d33277e0e62fcbe25786abfc59}\label{enigme_8c_afd5716d33277e0e62fcbe25786abfc59}} 
+\hyperlink{structinfoenigme}{infoenigme} {\bfseries extraire\+Enigme} (\hyperlink{structenigme}{enigme} e)
+\item 
+\mbox{\Hypertarget{enigme_8c_a73a675c3b8d64e023b90ccfe9b7f986f}\label{enigme_8c_a73a675c3b8d64e023b90ccfe9b7f986f}} 
+int {\bfseries enigmestatique} (\hyperlink{structeni}{eni} q, S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event)
+\item 
+\mbox{\Hypertarget{enigme_8c_a805bf06daf11b90c735e07caf49204f1}\label{enigme_8c_a805bf06daf11b90c735e07caf49204f1}} 
+void {\bfseries enigmealeatoire} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structenig}{enig} w)
+\item 
+\mbox{\Hypertarget{enigme_8c_a7df7d021c60c4acfb8410366e5dcc9b4}\label{enigme_8c_a7df7d021c60c4acfb8410366e5dcc9b4}} 
+int {\bfseries reponseenigme} (\hyperlink{structinfoenigme}{infoenigme} rep, S\+D\+L\+\_\+\+Event event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Beyram Ayadi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17,6,2020 
+\end{DoxyDate}
