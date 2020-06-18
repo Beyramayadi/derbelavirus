@@ -1,0 +1,15 @@
+
+#ifndef _ENTITE_H
+#define _ENTITE_H
+
+typedef struct ENNEMIE
+{
+SDL_Rect position ;
+SDl_Rect frame[maxStatesEnnemie][maxFramesEnnemie];
+SDL_Surface * image;
+int sens_mouvement_vertical;
+int sens_mouvement_horizantal;
+SDL_Rect frameEnnemie;
+int vie;
+
+}Ennemie;

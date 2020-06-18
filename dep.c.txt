@@ -1,0 +1,50 @@
+void moveEnnemie(Ennemie ennemie[], int n, SDL_Surface * fenetre, background ImageFond, Hero hero){
+
+int posxMax=/*ImageFond.frame.x+*/fenetre->w-(hero.spriteHero->w/13);
+int posxMin=50;
+int posyMax=fenetre->h-320;
+int posyMin=fenetre->h-(hero.spriteHero->h/10);
+
+int k;
+
+for(k=0;k<n;k++){
+
+
+
+
+
+if(ennemie[k].position.y<=posyMax)
+ennemie[k].sens_mouvement_vertical=1;
+
+if(ennemie[k].position.y>=posyMin)
+ennemie[k].sens_mouvement_vertical=0;
+
+
+if(ennemie[k].position.x>=posxMax)
+ennemie[k].sens_mouvement_horizontal=1;
+
+if(ennemie[k].position.x<=posxMin)
+ennemie[k].sens_mouvement_horizontal=0;
+
+if(ennemie[k].sens_mouvement_horizontal==0){
+ennemie[k].position.x+=6;
+}
+else
+{
+ennemie[k].position.x-=6;
+}
+
+
+
+
+if(ennemie[k].sens_mouvement_vertical==0){
+ennemie[k].position.y-=6;
+}
+else
+{
+ennemie[k].position.y+=6;
+}
+}
+
+
+}
