@@ -56,7 +56,7 @@ float delta_s=0;
 int xp;
 Hero Hero;
 Hero.running=1; //start while
-//init
+
 SDL_Init(SDL_INIT_VIDEO |SDL_INIT_AUDIO);
 action_create( &Hero);
     //game loop
@@ -122,7 +122,7 @@ else{
 SDL_Delay(periodeFps -dt);
 }
   }
-//
+
 action_dispose( &Hero);
 
 SDL_Quit(); 
