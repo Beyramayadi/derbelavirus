@@ -27,9 +27,9 @@ tmp=IMG_Load("p1.PNG");
 Hero->p=SDL_DisplayFormatAlpha(tmp);
 SDL_FreeSurface(tmp);
 tmp=NULL;
-//rect perso
+
 SDL_GetClipRect(Hero->p,&Hero->p_rect);
-//position du perso
+
 Hero->p_rect.x=60;
 Hero->p_rect.y=450;
 }
@@ -50,7 +50,7 @@ int ex=0;
 int running=1;
 int now=0;
 int dx=0;
-int periodeFps=33; //33 frame par s
+int periodeFps=33; 
 int dt=0;
 float delta_s=0;
 int xp;
